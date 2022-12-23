@@ -73,6 +73,10 @@ public class Lancamento {
 	@Column(name = "status")
 	@Enumerated(value = EnumType.STRING)
 	private StatusLancamento status;
+	
+	public Lancamento() {
+		super();
+	}
 
 	public Lancamento(String string, String string2, String string3, BigDecimal bigDecimal, TipoLancamento receita, StatusLancamento pendente, LocalDate localDate) {
 		super();
